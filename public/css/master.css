@@ -1,0 +1,256 @@
+/* structure des pages */
+* {
+    box-sizing: border-box;
+    
+}
+body {
+    background: linear-gradient(-45deg, #B3514E,#A13333, #461111, #040303);
+	background-size: 600% 600%;
+	animation: gradient 200s ease infinite;
+	height: 100vh;
+    font-family: 'Konnect-Medium';
+    margin: 0px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* CSS HEADER */
+header{
+    color:rgb(255, 255, 255);
+}
+.container-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* CSS NAV */
+.container-nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    color: rgb(190, 185, 185);
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color:rgb(226, 223, 223);
+    position: relative;
+    padding: 16px 15px;
+    transition: all 0.2s;
+}
+a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(121, 117, 115, 0.11);
+    border-radius: 5px;
+}
+
+/* CSS MAIN */
+.presentation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentationContent{
+    max-width: 75%;
+    text-align: justify;
+}
+
+/* CSS NAV CONTACT */
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.profilePicture, .formulaireContact{
+    max-width: 300px;
+    width: 100%;
+    height: 450px;
+    transition: max-width 0.2s;
+}
+.profilePicture{
+    background-image: url("../../public/images/Killian-V1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.formulaireContact{
+    text-align: center;
+    background-color: rgb(75, 38, 38);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*border: 0.5px solid rgb(90, 89, 89);*/
+}
+.formulaireContact div{
+    width: 80%;
+}
+.m-b-16{
+    margin-bottom: 16px;
+}
+button[type="submit"]{
+    width: 35%;
+    transition: background-color 0.5s ;
+}
+button[type="submit"]:hover{
+    background-color: rgba(255, 255, 255, 0.589);
+}
+input,
+select,
+textarea {
+    width: 100%;
+}
+input,
+select,
+button {
+    color: white;
+    background: rgba(255, 255, 255, 0.233);
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: 0px;
+}
+input::placeholder,
+textarea::placeholder{
+    color: white;
+}
+option{
+    color:black;
+}
+textarea {
+    resize: none;
+    color:white;
+    background: rgba(255, 255, 255, 0.233);
+    border-radius: 10px;
+    border: 0px;
+}
+
+/* CSS FOOTER */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+.footdiv{
+    border-right: 0.2px white solid;
+}
+
+.footdivLeft {
+    border-left: 0.2px white solid;
+}
+
+footer div a img{
+    filter: invert(1);
+}
+
+footer div{
+    width: 300px;
+}
+/* élément de décoration */
+.box-shadow-red {
+    box-shadow: 2px 2px 24px rgb(88, 63, 50);
+}
+.box-shadow-grey{
+    box-shadow: 2px 2px 24px rgb(39, 37, 37);
+}
+.border-radius-5 {
+    border-radius: 10px;
+}
+.border-radius-10 {
+    border-radius: 20px;
+}
+
+/* CLASS DONT'T REPEAT YOURSELF */
+.m-8 {
+    margin: 8px;
+}
+.m-16 {
+    margin: 16px;
+}
+.p-8 {
+    padding: 8px;
+}
+.p-16 {
+    padding: 16px;
+}
+.p-32 {
+    padding: 56px;
+}
+.flex {
+    display: flex;
+}
+
+.txt-al-center {
+    text-align: center;
+}
+h5 {
+    font-family: 'Konnect-Medium_Light';
+}
+
+h4{
+    font-family: 'Konnect-Italic';
+}
+/* FONT-FACE */
+@font-face {
+    font-family: 'Konnect-Medium';
+    src : url("../Font/Konnect/KonnectMedium.otf");
+}
+
+@font-face {
+    font-family: 'Konnect-Medium_Light';
+    src: url("../Font/Konnect/KonnectLight.otf");
+}
+@font-face {
+    font-family: 'Konnect-Italic';
+    src: url("../Font/Konnect/KonnectLightItalic.otf");
+}
+@media screen and (min-width: 960px){
+    .profilePicture:hover, .formulaireContact:hover{
+        max-width: 400px;
+    }
+}
+@media screen and (max-width: 960px){
+
+    .footer{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .footdiv {
+        flex-direction: row;
+        border-right: 0px;
+
+    }
+
+}
+@media screen and (max-width: 1000px) {
+
+    .footdivLeft {
+        flex-direction: row;
+        border-left: 0px;
+    }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil | PERRICHET</title>
+    <!-- CONNEXION MASTER CSS -->
+    <link rel="stylesheet" href="../public/css/master.css">
+  </head>
+  <body>
+    <form action="/" method="POST">
+      <header class="container-header">
+      <div>
+        <p>
+        <h1 class="txt-al-center">PERRICHET KILLIAN</h1>
+        </p>
+        <p>
+        <h1 class="txt-al-center">DEVELOPPEUR WEB</h1>
+        </p>
+      </div>
+      </header>
+      <nav class="container-nav">
+        <a href="/etude" class="m-16">Étude</a>
+        <a href="/projet" class="m-16">Projet</a>
+        <a href="/languages" class="m-16">Compétences</a>
+        <a href="#" class="m-16">Hobbies</a>
+      </nav>
+      <main class="presentation p-16">
+        <h2>À propos de moi ?</h2>
+        <div class="presentationContent">
+          <h4>
+            <p>Je m’appelle Killian, j’ai 23ans et je suis actuellement en recherche d’un contrat d’alternance afin
+              d’intégrer une formation professionnel en développement web et web mobile, mon parcours en développement, n’en
+              est pas à son coup d’essais.</p>
+            <p>En effet j’ai déjà pût réaliser une 1re année en BTS SIO spécialité SLAM au Lycée Ozenne à Toulouse, ainsi
+              qu’une première formation professionnel RNCP (Bac + 2), en développement web et web mobile chez Webforce, au
+              cours de ses nombreuses formation j’ai pût expérimenter divers langages et technologies que vous pourrez
+              consulter dans l’onglet « Languages » de ce portfolio.</p>
+            <p>Je vous souhaite donc la bienvenue sur ce site web développé par mes soins.</p>
+          </h4>
+        </div>
+      </main>
+      <nav>
+        <div class="contact">
+          <div class="profilePicture border-radius-10 box-shadow-red m-16"></div>
+          <form class="formulaireContact border-radius-10 box-shadow-red m-16" action="#" method="POST">
+            <div class="m-b-16">
+              <input type="text" placeholder="Nom">
+            </div>
+            <div class="m-b-16">
+              <input type="text" placeholder="Prénom">
+            </div>
+            <div class="m-b-16">
+              <input type="email" placeholder="Adresse mail">
+            </div>
+            <div class="m-b-16">
+              <select name="sujet" id="sujet" required>
+                <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+                <option value="parcours">Question sur mon parcours ?</option>
+                <option value="disponibilite"> Mes disponibilités ?</option>
+                <option value="locomotion">Mes moyens de locomotions ?</option>
+                <option value="autre">Autre...</option>
+              </select>
+            </div>
+            <div class="m-b-16">
+              <textarea class="p-8" id="message" name="message" placeholder="Message" rows="7" cols="33"></textarea>
+            </div>
+            <div class="m-b-16">
+              <button type="submit">Envoyer</button>
+            </div>
+          </form>
+        </div>
+      </nav>
+      <footer class="footer p-32">
+        <div class="footer footdiv">
+          <h5>Mes réseaux :</h5>
+          <a class="" href="#">
+            <img src="../../public/images/github(1).svg" alt="Logo_Github" width="30px">
+          </a>
+          <a class="" href="#">
+            <img src="../../public/images/linkedin(1).svg" alt="Logo_Linkedin" width="30px">
+          </a>
+        </div>
+        <div class="">
+          <h5>copyright &#169; 2023 PERRICHET Killian</h5>
+        </div>
+        <div class="footer footdivLeft p-16 m-16">
+          <img src="../../public/images/Logo.png" width="200px" alt="">
+        </div>
+      </footer>
+    </form>
+  </body>
+</html>
