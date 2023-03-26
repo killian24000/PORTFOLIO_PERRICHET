@@ -2,10 +2,10 @@
   <footer class="footer p-32">
         <div class="footer footdiv">
           <h5>Mes réseaux :</h5>
-          <a class="" href="#">
+          <a class="" href="https://github.com">
             <img src="images/github(1).svg" alt="Logo_Github" width="30px">
           </a>
-          <a class="" href="#">
+          <a class="" href="https://www.linkedin.com/in/killian-perrichet-693206227/">
             <img src="images/linkedin(1).svg" alt="Logo_Linkedin" width="30px">
           </a>
         </div>
