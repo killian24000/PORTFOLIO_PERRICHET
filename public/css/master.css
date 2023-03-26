@@ -88,7 +88,7 @@ a:hover {
     transition: max-width 0.2s;
 }
 .profilePicture{
-    background-image: url("../../public/images/Killian-V1.jpg");
+    background-image: url("../images/Killian-V1.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -233,6 +233,7 @@ h4{
         max-width: 400px;
     }
 }
+
 @media screen and (max-width: 960px){
 
     .footer{
@@ -247,6 +248,7 @@ h4{
     }
 
 }
+
 @media screen and (max-width: 1000px) {
 
     .footdivLeft {
