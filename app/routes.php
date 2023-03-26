@@ -24,7 +24,7 @@
 
   // Page Languages
   'languages' => [
-      'path' => '/languages',
+      'path' => '/competences',
       'controller' => 'languages.php'
   ],
 

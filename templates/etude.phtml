@@ -11,16 +11,11 @@
     </head>
     <body>
         <form action="/etude" method="POST">
-          <header class="container-header">
-            <div>
-                <p><h1 class="txt-al-center">PERRICHET KILLIAN</h1></p>
-                <p><h1 class="txt-al-center">DEVELOPPEUR WEB</h1></p>
-            </div>
-          </header>
+          <?php require'header.php'?>
           <nav class="container-nav">
               <a href="/" class="m-16">Accueil</a>
               <a href="/projet" class="m-16">Projet</a>     
-              <a href="/languages" class="m-16">Compétences</a>
+              <a href="/competences" class="m-16">Compétences</a>
               <a href="#" class="m-16">Hobbies</a>
           </nav>
           <main>
@@ -73,20 +68,7 @@
                 </div>
               </div>
           </main>
-          <footer class="footer p-32">
-            <div class="footer footdiv">
-              <h5>Mes réseaux</h5>
-                <a class="" href="#">
-                  <img src="images/github(1).svg" alt="Logo_Github" width="30px">
-                </a>
-                <a class="" href="#">
-                  <img src="images/linkedin(1).svg" alt="Logo_Linkedin" width="30px">
-                </a>    
-            </div>
-            <div class="">
-                <h5>copyright &#169; 2023 PERRICHET Killian</h5>
-            </div>
-          </footer>
+          <?php require'footer.php'?>
         </form>
     </body>
 </html>
