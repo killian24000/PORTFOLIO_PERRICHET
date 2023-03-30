@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil | PERRICHET</title>
+    <title>Accueil / PERRICHET</title>
     <!-- CONNEXION MASTER CSS -->
     <link rel="stylesheet" href="css/master.css">
-  </head>
+  </head>           
   <body>
       <?php require'header.php'?>
       <nav class="container-nav">
@@ -33,19 +33,19 @@
       </main>
       <nav>
         <div class="contact">
-          <div class="profilePicture border-radius-10 box-shadow-red m-16"></div>
-          <form class="formulaireContact border-radius-10 box-shadow-red m-16" action="#" method="POST">
+          <div class="profilePicture border-radius-10 box-shadow-red m-32"></div>
+          <form class="formulaireContact border-radius-10 box-shadow-red m-16" action="traitement.php" method="POST"  name="validation">
             <div class="m-b-16">
-              <input type="text" placeholder="Nom">
+              <input type="text" name="username" placeholder="Nom" required>
             </div>
             <div class="m-b-16">
-              <input type="text" placeholder="Prénom">
+              <input type="text" name="prenom" placeholder="Prénom" required>
             </div>
             <div class="m-b-16">
-              <input type="email" placeholder="Adresse mail">
+              <input type="email" name="email" placeholder="Adresse mail" required>
             </div>
             <div class="m-b-16">
-              <select name="sujet" id="sujet" required>
+              <select name="sujet" required>
                 <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
                 <option value="parcours">Question sur mon parcours ?</option>
                 <option value="disponibilite"> Mes disponibilités ?</option>
@@ -54,14 +54,15 @@
               </select>
             </div>
             <div class="m-b-16">
-              <textarea class="p-8" id="message" name="message" placeholder="Message" rows="7" cols="33"></textarea>
+              <textarea class="p-8" name="message" placeholder="Message" rows="7" cols="33" required></textarea>
             </div>
             <div class="m-b-16">
               <button type="submit">Envoyer</button>
             </div>
+            <p style="color : red;" id="error">
           </form>
         </div>
       </nav>
       <?php require'footer.php'?>
-  </body>
+    </body>
 </html>

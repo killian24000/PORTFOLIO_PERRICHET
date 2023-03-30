@@ -4,7 +4,7 @@
     
 }
 body {
-    background: linear-gradient(-45deg, #B3514E,#A13333, #461111, #040303);
+    background: linear-gradient(-45deg, #B3514E,#A13333, #831c1c, #a30a0a);
 	background-size: 600% 600%;
 	animation: gradient 200s ease infinite;
 	height: 100vh;
@@ -27,6 +27,7 @@ body {
 /* CSS HEADER */
 header{
     color:rgb(255, 255, 255);
+    
 }
 .container-header {
     display: flex;
@@ -34,6 +35,7 @@ header{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background-color: rgb(49, 11, 11);
 }
 
 /* CSS NAV */
@@ -44,6 +46,7 @@ header{
     justify-content: center;
     color: rgb(190, 185, 185);
     text-decoration: none;
+    background-color :rgb(49, 11, 11);
 }
 a {
     text-decoration: none;
@@ -153,6 +156,7 @@ textarea {
     align-items: center;
     text-align: center;
     color: rgb(255, 255, 255);
+    background-color: rgb(49, 11, 11);
 
 }
 .footdiv{
@@ -190,6 +194,9 @@ footer div{
 }
 .m-16 {
     margin: 16px;
+}
+.m-32 {
+    margin: 32px;
 }
 .p-8 {
     padding: 8px;
