@@ -109,7 +109,7 @@
   
   
   
-  @media only screen and (max-width: 979px) {
+  @media only screen and (max-width: 1200px) {
     .ag-courses_item {
       -ms-flex-preferred-size: calc(50% - 30px);
       flex-basis: calc(50% - 30px);
@@ -119,13 +119,13 @@
     }
   }
   
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 950px) {
     .ag-format-container {
-      width: 96%;
+      width: 90%;
     }
   
   }
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 800px) {
     .ag-courses_item {
       -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
