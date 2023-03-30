@@ -13,7 +13,7 @@ body {
     margin: 0px;
 }
 .NeonEffect,
-a:hover{
+a.NeonButton:hover{
     color: #ffffff;
     text-shadow:
       0 0 6px rgba(255, 255, 255, 0.92),
@@ -35,7 +35,6 @@ a:hover{
       inset 0 0 32px rgba(201, 41, 54, 0.92); 
 }
 
-/* CSS HEADER */
 header{
     color:rgb(255, 255, 255);
     
