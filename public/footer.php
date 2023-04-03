@@ -12,8 +12,8 @@
         <div class="">
           <h5>copyright &#169; 2023 PERRICHET Killian</h5>
         </div>
-        <div class="footer footdivLeft p-16 m-16">
+        <!-- <div class="footer footdivLeft p-16 m-16">
           <img src="images/Logo.png" width="200px" alt="">
-        </div>
+        </div> -->
     </footer>
 </body>

@@ -33,6 +33,12 @@
       'path' => '/projet',
       'controller' => 'projet.php'
   ],
+
+  // Page erreur 404
+  'error404' => [
+    'path' => '/error404',
+    'controller' => 'error404.php'
+  ],
 ];
 
 return $routes;
