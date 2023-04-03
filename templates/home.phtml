@@ -20,13 +20,13 @@
         <h2 class="NeonEffect">À propos de moi ?</h2>
         <div class="presentationContent">
           <h4>
-            <p>Je m’appelle Killian, j’ai 23ans et je suis actuellement en recherche d’un contrat d’alternance afin
+            <p>Je m’appelle Killian, j’ai 23 ans et je suis actuellement en recherche d’un contrat d’alternance afin
               d’intégrer une formation professionnel en développement web et web mobile, mon parcours en développement, n’en
-              est pas à son coup d’essais.</p>
-            <p>En effet j’ai déjà pût réaliser une 1re année en BTS SIO spécialité SLAM au Lycée Ozenne à Toulouse, ainsi
-              qu’une première formation professionnel RNCP (Bac + 2), en développement web et web mobile chez Webforce, au
-              cours de ses nombreuses formation j’ai pût expérimenter divers langages et technologies que vous pourrez
-              consulter dans l’onglet « Languages » de ce portfolio.</p>
+              est pas à son coup d’essai.</p>
+            <p>En effet, j’ai déjà pu réaliser une 1re année en BTS SIO spécialité SLAM au Lycée Ozenne à Toulouse, ainsi
+              qu’une première formation professionnelle RNCP (Bac + 2), en développement web et web mobile chez Webforce, au
+              cours de ses nombreuses formation, j’ai pu expérimenter divers langages et technologies que vous pourrez
+              consulter dans l’onglet « Compétences » de ce portfolio.</p>
             <p>Je vous souhaite donc la bienvenue sur ce site web développé par mes soins.</p>
           </h4>
         </div>
@@ -36,28 +36,19 @@
           <div class="profilePicture Neon border-radius-10 m-32"></div>
           <form class="formulaireContact Neon border-radius-10 m-16" action="traitement.php" method="POST"  name="validation">
             <div class="m-b-16">
-              <input type="text" name="username" placeholder="Nom" required>
+              <input type="text" name="Nom" placeholder="Nom" id="Nom" required>
             </div>
             <div class="m-b-16">
-              <input type="text" name="prenom" placeholder="Prénom" required>
+              <input type="text" name="prenom" placeholder="Prénom" id="Prenom" required>
             </div>
             <div class="m-b-16">
-              <input type="email" name="email" placeholder="Adresse mail" required>
+              <input type="email" name="email" placeholder="Adresse mail" id="email" required>
             </div>
             <div class="m-b-16">
-              <select name="sujet" required>
-                <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
-                <option value="parcours">Question sur mon parcours ?</option>
-                <option value="disponibilite"> Mes disponibilités ?</option>
-                <option value="locomotion">Mes moyens de locomotions ?</option>
-                <option value="autre">Autre...</option>
-              </select>
+              <textarea class="p-8" name="message" placeholder="Message" rows="7" cols="33" id="message" required></textarea>
             </div>
             <div class="m-b-16">
-              <textarea class="p-8" name="message" placeholder="Message" rows="7" cols="33" required></textarea>
-            </div>
-            <div class="m-b-16">
-              <button type="submit">Envoyer</button>
+              <button type="submit" name="submit">Envoyer</button>
             </div>
             <p style="color : red;" id="error">
           </form>
